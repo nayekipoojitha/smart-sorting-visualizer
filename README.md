@@ -12,7 +12,7 @@ It helps users understand sorting behavior, performance, and time complexity thr
 
 
 
-\## Features
+ Features
 
 
 
@@ -95,4 +95,5 @@ This project is useful for:
 \- Learning time complexity differences
 
 \- Demonstrating DSA concepts visually
+
 
