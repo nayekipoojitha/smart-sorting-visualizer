@@ -1,8 +1,6 @@
 let arr = [];
 const SIZE = 20;
 const SPEED = 100;
-
-// ---------- Utility ----------
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
@@ -149,5 +147,4 @@ async function partition(low, high) {
     return i + 1;
 }
 
-// Generate initial array
 generateArray();
