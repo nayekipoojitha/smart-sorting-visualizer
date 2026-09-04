@@ -16,9 +16,6 @@ body {
     color: white;
 }
 
-
-/* ---------- Header ---------- */
-
 h1 {
     margin: 0;
     padding-top: 45px;
@@ -48,9 +45,6 @@ h1 {
     font-size: 15px;
 }
 
-
-/* ---------- Main Controls ---------- */
-
 .controls {
     width: fit-content;
 
@@ -73,8 +67,6 @@ h1 {
         0 10px 30px rgba(0, 0, 0, 0.25);
 }
 
-
-/* ---------- Buttons ---------- */
 
 button {
     border: none;
@@ -110,8 +102,6 @@ button:active {
 }
 
 
-/* Generate button */
-
 button:first-child {
     background: linear-gradient(
         135deg,
@@ -130,8 +120,6 @@ button:first-child:hover {
         0 8px 25px rgba(99, 102, 241, 0.45);
 }
 
-
-/* ---------- Chart Card ---------- */
 
 .chart {
     width: 90%;
@@ -159,8 +147,6 @@ button:first-child:hover {
 }
 
 
-/* ---------- Y Axis ---------- */
-
 .y-axis {
     height: 320px;
 
@@ -180,9 +166,6 @@ button:first-child:hover {
 
     font-size: 12px;
 }
-
-
-/* ---------- Bars Container ---------- */
 
 #array {
     position: relative;
@@ -213,9 +196,6 @@ button:first-child:hover {
         );
 }
 
-
-/* ---------- Bars ---------- */
-
 .bar {
     width: 24px;
 
@@ -242,9 +222,6 @@ button:first-child:hover {
     position: relative;
 }
 
-
-/* Bar hover */
-
 .bar:hover {
     transform: scaleX(1.15);
 
@@ -257,9 +234,6 @@ button:first-child:hover {
     box-shadow:
         0 0 20px rgba(168, 85, 247, 0.6);
 }
-
-
-/* ---------- Execution Time ---------- */
 
 #time {
     width: fit-content;
@@ -280,9 +254,6 @@ button:first-child:hover {
 
     min-height: 18px;
 }
-
-
-/* ---------- Responsive ---------- */
 
 @media (max-width: 700px) {
 
