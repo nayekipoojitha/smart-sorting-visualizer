@@ -111,30 +111,34 @@ async function quickSort(low,high){
         await quickSort(p+1,high);
     }
 }
-async function partition(low,high){
+async function partition(start,end){
     const bars=document.getElementsByClassName("bar");
-    let pivot=arr[high];
-    bars[high].style.backgroundColor="purple";
-    let i=low-1;
-    for(let j=low;j<high;j++){
-        bars[j].style.backgroundColor="red";
-        await sleep(SPEED);
-        if(arr[j]<pivot){
+    let pivot=arr[start];
+    bars[start].style.backgroundColor="purple";
+    let i=start;
+    let j=end;
+    while(i<j){
+        while(i<end&&arr[i]<=pivot){
             i++;
+        }
+        while(j>start&&arr[j]>pivot){
+            j--;
+        }
+        if(i<j){
             [arr[i],arr[j]]=[arr[j],arr[i]];
             bars[i].style.height=getBarHeight(arr[i])+"px";
             bars[j].style.height=getBarHeight(arr[j])+"px";
             bars[i].title=arr[i];
             bars[j].title=arr[j];
+            await sleep(SPEED);
         }
-        bars[j].style.backgroundColor="steelblue";
     }
-    [arr[i+1],arr[high]]=[arr[high],arr[i+1]];
-    bars[i+1].style.height=getBarHeight(arr[i+1])+"px";
-    bars[high].style.height=getBarHeight(arr[high])+"px";
-    bars[i+1].title=arr[i+1];
-    bars[high].title=arr[high];
-    bars[high].style.backgroundColor="steelblue";
-    return i+1;
+    [arr[start],arr[j]]=[arr[j],arr[start]];
+    bars[start].style.height=getBarHeight(arr[start])+"px";
+    bars[j].style.height=getBarHeight(arr[j])+"px";
+    bars[start].title=arr[start];
+    bars[j].title=arr[j];
+    bars[start].style.backgroundColor="steelblue";
+    return j;
 }
 generateArray();
