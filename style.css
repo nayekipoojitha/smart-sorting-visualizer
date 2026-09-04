@@ -5,35 +5,27 @@
 body {
     margin: 0;
     min-height: 100vh;
-
     font-family: Arial, sans-serif;
-
     background:
         radial-gradient(circle at top left, #243b55, transparent 35%),
         radial-gradient(circle at bottom right, #302b63, transparent 35%),
         #0f172a;
-
     color: white;
 }
 
 h1 {
     margin: 0;
     padding-top: 45px;
-
     text-align: center;
-
     font-size: 42px;
     font-weight: 700;
-
     letter-spacing: 1px;
-
     background: linear-gradient(
         90deg,
         #60a5fa,
         #a78bfa,
         #22d3ee
     );
-
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -47,60 +39,37 @@ h1 {
 
 .controls {
     width: fit-content;
-
     margin: 30px auto;
-
     padding: 14px;
-
     display: flex;
     gap: 10px;
-
     background: rgba(255, 255, 255, 0.06);
-
     border: 1px solid rgba(255, 255, 255, 0.12);
-
     border-radius: 16px;
-
     backdrop-filter: blur(12px);
-
-    box-shadow:
-        0 10px 30px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
 }
-
 
 button {
     border: none;
-
     padding: 12px 20px;
-
     border-radius: 10px;
-
     background: #1e293b;
-
     color: #e2e8f0;
-
     font-size: 14px;
-
     cursor: pointer;
-
     transition: all 0.25s ease;
 }
 
-
 button:hover {
     transform: translateY(-3px);
-
     background: #334155;
-
-    box-shadow:
-        0 8px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
-
 
 button:active {
     transform: translateY(0);
 }
-
 
 button:first-child {
     background: linear-gradient(
@@ -108,84 +77,51 @@ button:first-child {
         #2563eb,
         #7c3aed
     );
-
     color: white;
-
     font-weight: bold;
 }
 
-
 button:first-child:hover {
-    box-shadow:
-        0 8px 25px rgba(99, 102, 241, 0.45);
+    box-shadow: 0 8px 25px rgba(99, 102, 241, 0.45);
 }
-
 
 .chart {
     width: 90%;
     max-width: 1100px;
-
     height: 430px;
-
     margin: 35px auto;
-
     padding: 35px 30px 30px;
-
     display: flex;
     align-items: flex-end;
-
     background: rgba(255, 255, 255, 0.06);
-
     border: 1px solid rgba(255, 255, 255, 0.12);
-
     border-radius: 22px;
-
     backdrop-filter: blur(15px);
-
-    box-shadow:
-        0 20px 50px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
 }
-
 
 .y-axis {
     height: 320px;
-
     width: 45px;
-
     display: flex;
-
     flex-direction: column;
-
     justify-content: space-between;
-
     margin-right: 15px;
-
     text-align: right;
-
     color: #94a3b8;
-
     font-size: 12px;
 }
 
 #array {
     position: relative;
-
     height: 320px;
-
     flex: 1;
-
     display: flex;
-
     align-items: flex-end;
-
     justify-content: center;
-
     gap: 5px;
-
     padding: 0 10px;
-
     border-bottom: 2px solid rgba(255, 255, 255, 0.25);
-
     background:
         repeating-linear-gradient(
             to top,
@@ -198,74 +134,52 @@ button:first-child:hover {
 
 .bar {
     width: 24px;
-
     min-height: 5px;
-
     border-radius: 6px 6px 2px 2px;
-
     background: linear-gradient(
         to top,
         #2563eb,
         #38bdf8
     );
-
-    box-shadow:
-        0 0 12px rgba(56, 189, 248, 0.25);
-
+    box-shadow: 0 0 12px rgba(56, 189, 248, 0.25);
     transition:
         height 0.2s ease,
         transform 0.2s ease,
         background 0.2s ease;
-
     cursor: pointer;
-
     position: relative;
 }
 
 .bar:hover {
     transform: scaleX(1.15);
-
     background: linear-gradient(
         to top,
         #8b5cf6,
         #ec4899
     );
-
-    box-shadow:
-        0 0 20px rgba(168, 85, 247, 0.6);
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.6);
 }
 
 #time {
     width: fit-content;
-
     margin: 25px auto;
-
     padding: 12px 22px;
-
     border-radius: 10px;
-
     background: rgba(255, 255, 255, 0.07);
-
     border: 1px solid rgba(255, 255, 255, 0.1);
-
     color: #cbd5e1;
-
     font-size: 14px;
-
     min-height: 18px;
 }
 
 @media (max-width: 700px) {
-
     h1 {
         font-size: 30px;
     }
 
     .controls {
         width: 90%;
-
         flex-wrap: wrap;
-
         justify-content: center;
     }
 
@@ -275,9 +189,7 @@ button:first-child:hover {
 
     .chart {
         width: 95%;
-
         padding: 25px 10px;
-
         height: 380px;
     }
 
@@ -287,7 +199,6 @@ button:first-child:hover {
 
     .y-axis {
         width: 35px;
-
         margin-right: 8px;
     }
 }
